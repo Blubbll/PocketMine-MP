@@ -2277,7 +2277,7 @@ class Level implements ChunkManager, Metadatable{
 
 	/**
 	 * Returns the Level name
-	 * If null, world gets returned. This prevents World Managing plugins from Crashing the Server on null
+	 * 
 	 * @return string
 	 */
 	
