@@ -2277,11 +2277,16 @@ class Level implements ChunkManager, Metadatable{
 
 	/**
 	 * Returns the Level name
-	 * 
+	 * If null, world gets returned. This prevents World Managing plugins from Crashing the Server on null
 	 * @return string
 	 */
 	
-	
+		if ($this->provider->getName() === null) {
+		return world;
+		}
+		
+		else 
+
 		return $this->provider->getName();
 	
 	}
